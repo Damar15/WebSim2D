@@ -184,7 +184,7 @@ function RobotI(width, height, color, x, y, type) {
     this.advanceTo = async function(distance){
       initial_position_x = this.x;
       initial_position_y = this.y;
-      distance > 0 ? this.setV(1) : this.setV(-1);
+      distance > 0 ? this.setV(10) : this.setV(-1);
       var time = Date.now();
       await sleep(distance);
       this.setV(0);
